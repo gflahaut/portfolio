@@ -11191,3 +11191,140 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+
+/* ===== THEME DARK FULL ===== */
+html[data-theme="dark"] {
+    --bg: #090909;
+    --text: #ffffff;
+    --text-muted: #bbbbbb;
+    --glass-bg: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.15);
+    --accent: #ffffff;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+}
+
+/* ===== NAVBAR GLASS ===== */
+.glass-nav {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 0.8rem 0;
+    transition: 0.3s ease;
+}
+
+.nav-link {
+    color: var(--text-muted) !important;
+    margin-left: 1rem;
+    transition: 0.2s;
+}
+.nav-link:hover {
+    color: var(--text) !important;
+}
+
+/* ===== HERO ===== */
+.hero-section {
+    height: 100vh;
+    background: url('assets/hero.jpg') center/cover no-repeat;
+    position: relative;
+}
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), var(--bg));
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    animation: fadeIn 1.2s ease forwards;
+}
+.hero-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.hero-subtitle {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+}
+
+/* ===== GLASS CARDS ===== */
+.glass-card, .glass-modal {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* ===== PORTFOLIO GRID ===== */
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-6px);
+}
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.2rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+    opacity: 0;
+    transition: 0.3s;
+}
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.section-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+/* ===== ABOUT ===== */
+.about-card img {
+    border: 3px solid var(--glass-border);
+}
+
+/* ===== CONTACT ===== */
+form input, form textarea {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--glass-border);
+    color: var(--text);
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: var(--text-muted);
+}
+
+button.btn-light {
+    background: var(--accent);
+    color: black;
+    font-weight: 600;
+}
+button.btn-light:hover {
+    background: #eaeaea;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
