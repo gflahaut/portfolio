@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio – Illustrations & Design</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top glass-nav" aria-label="Navigation principale">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#hero">Lili</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Menu mobile">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header id="hero" class="hero-section d-flex align-items-center justify-content-center text-center">
+    <div class="hero-content">
+        <h1 class="hero-title">Illustrations • Identités visuelles • Interfaces élégantes</h1>
+        <p class="hero-subtitle">Un univers où l'art rencontre la précision.</p>
+        <a href="#portfolio" class="btn btn-light btn-lg mt-4">Explorer</a>
+    </div>
+</header>
+
+<!-- PORTFOLIO GRID -->
+<section id="portfolio" class="container py-5">
+    <h2 class="section-title text-center mb-5">Portfolio</h2>
+
+    <div class="row g-4">
+        <!-- Exemple projet -->
+        <div class="col-md-4">
+            <div class="project-card" tabindex="0" role="button" data-bs-toggle="modal" data-bs-target="#modal1">
+                <img src="assets/illustrations/thumb.jpg" class="img-fluid rounded" alt="Aperçu illustration">
+                <div class="project-overlay">
+                    <h3>Illustration Procreate</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MODALE PROJET -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true" aria-labelledby="modalLabel1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content glass-modal p-3">
+            <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            <h3 id="modalLabel1" class="mb-3">Illustration Procreate</h3>
+            <img src="assets/illustrations/full.jpg" alt="Illustration complète" class="img-fluid rounded mb-3">
+            <p class="text-white-50">Description détaillée de l’illustration...</p>
+        </div>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="about-section py-5">
+    <div class="container text-center">
+        <h2 class="section-title mb-5">À propos</h2>
+        <div class="about-card glass-card mx-auto p-4" style="max-width: 900px;">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-4">
+                    <img src="assets/profile.jpg" alt="Portrait" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-md-8 text-start">
+                    <h3 class="mb-3">Lili — Illustratrice & Designer</h3>
+                    <p class="text-white-50">Je crée des univers visuels subtils, élégants et émotionnels. Mélange de douceur artistique et de rigueur graphique.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container py-5">
+    <h2 class="section-title text-center mb-5">Contact</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form class="glass-card p-4">
+                <input type="text" class="form-control mb-3" placeholder="Votre nom" aria-label="Nom">
+                <input type="email" class="form-control mb-3" placeholder="Votre email" aria-label="Email">
+                <textarea class="form-control mb-3" rows="4" placeholder="Votre message" aria-label="Message"></textarea>
+                <button class="btn btn-light w-100">Envoyer</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
