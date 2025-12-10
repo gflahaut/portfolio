@@ -5,18 +5,18 @@ export default function Hero() {
   return (
     <header id="hero" className="hero-section">
       <div className="hero-content">
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <div class="glass-card">
-              <div class="row g-5 align-items-center">
-                <div class="col-md-4">
+        <div className="row justify-content-center">
+          <div className="col-lg-10">
+            <div className="glass-card">
+              <div className="row g-5 align-items-center">
+                <div className="col-md-4">
                   <img
                     alt="Portrait"
-                    class="img-fluid rounded-circle shadow-lg"
+                    className="img-fluid rounded-circle shadow-lg"
                     src={Photo}
                   />
                 </div>
-                <div class="col p-4 d-flex flex-column position-static text-center">
+                <div className="col p-4 d-flex flex-column position-static text-center">
                   <h1 className='"hero-title"'>Gwendoline Flahaut </h1>
                   <h2 className="hero-subtitle mb-3">
                     Designer Graphique & Illustratrice
@@ -28,7 +28,7 @@ export default function Hero() {
                     Un univers où l'art rencontre la précision.
                   </p>
                 </div>
-                <div class="col p-4 d-flex flex-row position-static text-center">
+                <div className="col p-4 d-flex flex-row position-static text-center">
                   <a href="#portfolio" className="btn btn-glass btn-lg mt-4">
                     Explorer mon travail
                   </a>

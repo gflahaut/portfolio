@@ -10,7 +10,7 @@ export default function CustomNavbar() {
           <div className='col-auto d-none d-lg-block'>
              <img height="75"width="75"
                     alt="Portrait"
-                    class="rounded-circle shadow-lg bd-placeholder-img" 
+                    className="rounded-circle shadow-lg bd-placeholder-img" 
                     src={Photo}
                   />
           </div>
